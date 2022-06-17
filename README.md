@@ -64,4 +64,6 @@ print("predicted:", reg.predict(np.array([20]).reshape(-1, 1))[0], ", should be:
 with open("model.pkl", "wb") as f:
     pickle.dump(reg, f)
 ```
+the toy data:</br>
+[![model.png](https://i.postimg.cc/XvNK5x5y/model.png)](https://postimg.cc/9DSq5dJW)
 
