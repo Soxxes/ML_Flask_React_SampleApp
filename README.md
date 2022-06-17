@@ -15,7 +15,7 @@ Let's start with creating a basic ReactJS App:</br>
 ... this takes a few seconds.
 </br>
 
-Next, buil the Flask Backend:</br>
+Next, built the Flask Backend:</br>
 `$ mkdir backend`</br>
 
 Create a virtual environment:</br>
