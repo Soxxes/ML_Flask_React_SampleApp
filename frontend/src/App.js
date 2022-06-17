@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
 function App() {
+  const [inputText, setInputText] = useState("");
+  const [data, setdata] = useState({
+      result: 0,
+  });
+
+  // Using useEffect for single rendering
+  function test(x) {
+    // flask server it will be redirected to proxy
+    fetch("/predict", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            X: x
+        })
+    }).then((res) =>
+        res.json().then((data) => {
+            // Setting a data from api
+            setdata({
+                result: data.prediction
+            });
+        })
+    );
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ marginTop: "10%", textAlign: "center" }}>
+      <input value={inputText} onChange={(e) => setInputText(e.target.value)} />
+      <button onClick={() => test(inputText)}>Click me</button>
+      <p>{data.result}</p>
     </div>
   );
 }
