@@ -7,7 +7,7 @@ Please note I am neither an expert with React nor Flask. But this should give yo
 
 </br>
 
-## Step-By-Step Introduction
+## Step-By-Step Guide
 
 Let's start with creating a basic ReactJS App:</br>
 `$ create-react-app frontend react_flask_app --skip-git` </br>
