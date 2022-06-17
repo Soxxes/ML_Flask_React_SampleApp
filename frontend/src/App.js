@@ -6,9 +6,8 @@ function App() {
       result: 0,
   });
 
-  // Using useEffect for single rendering
   function test(x) {
-    // flask server it will be redirected to proxy
+    // flask server will be redirected to proxy
     fetch("/predict", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
@@ -17,7 +16,7 @@ function App() {
         })
     }).then((res) =>
         res.json().then((data) => {
-            // Setting a data from api
+            // setting data from api
             setdata({
                 result: data.prediction
             });
