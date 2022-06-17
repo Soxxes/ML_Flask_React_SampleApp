@@ -73,5 +73,5 @@ At the end you will get something like this:</br>
 [![frontend.png](https://i.postimg.cc/3RxHPMvJ/frontend.png)](https://postimg.cc/sBq8hNmt)
 
 By entering a number and clicking the button you will receive a prediction from the model. Let's quickly check if the example makes sense: </br>
-$$ y = 2.3 * 31 - 3 =  68.3 $$
+$$ y = 2.3 \cdot 31 - 3 =  68.3 $$
 That's okay since the model used 2.283 and -0.947 as parameters.
