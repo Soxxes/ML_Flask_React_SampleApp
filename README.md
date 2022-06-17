@@ -3,13 +3,13 @@ When I started with the webdevelopment and machine learning stuff I felt overwhe
 - [How to connect Flask and React](https://www.geeksforgeeks.org/how-to-connect-reactjs-with-flask-api/)
 - [Save and Load ML Models with Pickle](https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/)
 
-Please note I am neither an expert with React nor Flask. But this should give you a good starting point.
+Please note I am neither an expert in React nor Flask. But this should give you a good starting point.
 
 </br>
 
 ## Step-By-Step Guide
 
-Let's start with creating a basic ReactJS App:</br>
+Let's start by creating a basic ReactJS App:</br>
 `$ create-react-app frontend react_flask_app --skip-git` </br>
 
 ... this takes a few seconds.
