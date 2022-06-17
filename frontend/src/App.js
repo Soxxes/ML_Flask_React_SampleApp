@@ -28,7 +28,7 @@ function App() {
   return (
     <div style={{ marginTop: "10%", textAlign: "center" }}>
       <input value={inputText} onChange={(e) => setInputText(e.target.value)} />
-      <button onClick={() => test(inputText)}>Click me</button>
+      <button onClick={() => test(inputText)}>Predict</button>
       <p>{data.result}</p>
     </div>
   );
