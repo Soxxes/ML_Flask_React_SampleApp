@@ -74,4 +74,4 @@ At the end you will get something like this:</br>
 
 By entering a number and clicking the button you will receive a prediction from the model. Let's quickly check if the example makes sense: </br>
 $$ y = 2.3 \cdot 31 - 3 =  68.3 $$
-That's okay since the model used 2.283 and -0.947 as parameters.
+That's okay since the model used 2.283 and -0.947 as parameters. Why is the second paramter so bad? Because the noise we were adding is not zero-mean. But it doesn't matter here, you can take any other model if you want.
