@@ -94,5 +94,5 @@ If you now want to run the frontend and backend in separate Docker Containers, y
 
 [![Unbenannt.png](https://i.postimg.cc/GmMFH8gW/Unbenannt.png)](https://postimg.cc/YvWGP9HR)
 
-I added the suffix "-cont" to make it clear to the reader that this is the container and not the image. Next, we need to set up a Docker Compose File to let the Frontend and Backend communicate with each other.
+I added the suffix "-cont" to make it clear to the reader that this is the container and not the image. Next, we need to set up a Docker Compose File to let the Frontend and Backend communicate with each other, because just two single Docker containers are pretty useless.
 
