@@ -14,3 +14,6 @@ class LinearModelApi(Resource):
         return get_response({
             "prediction": result[0]
         })
+
+    def get(self):
+        return get_response({"msg": "worked"}, 200)
