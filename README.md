@@ -75,3 +75,22 @@ At the end you will get something like this:</br>
 By entering a number and clicking the button you will receive a prediction from the model. Let's quickly check if the example makes sense: </br>
 $$ y = 2.3 \cdot 31 - 3 =  68.3 $$
 That's okay since the model used 2.283 and -0.947 as parameters.
+
+## Dockerize It
+If you now want to run the frontend and backend in separate Docker Containers, you will find a Dockerfile in both folders. With that you can follow the instructions below.
+### Frontend
+`$ cd frontend`</br>
+`$ docker build -t <image_name> .`</br>
+`$ docker run --name <container_name> -p 3000:3000 <image_name>`
+
+### Backend
+`$ cd backend`</br>
+`$ docker build -t <image_name> .`</br>
+`$ docker run --name <container_name> -p 5000:5000 <image_name>`
+
+### Check if it works
+`$ docker ps`
+
+[![Unbenannt.png](https://i.postimg.cc/GmMFH8gW/Unbenannt.png)](https://postimg.cc/YvWGP9HR)
+
+I added the suffix "-cont" to make it clear to the reader that this is the container and not the image. Next, we need to set up a Docker Compose File to let the Frontend and Backend communicate with each other.
