@@ -97,3 +97,9 @@ If you now want to run the frontend and backend in separate Docker Containers, y
 
 I added the suffix "-cont" to make it clear to the reader that this is the container and not the image. Next, we need to set up a Docker Compose File to let the Frontend and Backend communicate with each other, because just two single Docker containers are pretty useless.
 
+### Docker Compose
+With the docker-compose.yml file the frontend will be conntected to the backend. Important: You have to change the proxy in the package.json file to `"proxy": "http://backend-cont:5000/"`. `backend-cont` is the container name of the backend service.</br>
+Check one last time if it works by running:</br>
+`docker-compose up`</br>
+
+
