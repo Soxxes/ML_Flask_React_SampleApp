@@ -1,10 +1,22 @@
-version: '3'
+version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    container_name: backend-cont
+    build:
+      context: ./backend
     volumes:
       - ./backend:/usr/backend/app
     ports:
-      - 5000:5000
+      - '5000:5000'
 
+  frontend:
+    container_name: frontend-cont
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/usr/frontend/app
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
