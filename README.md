@@ -100,6 +100,6 @@ I added the suffix "-cont" to make it clear to the reader that this is the conta
 ### Docker Compose
 With the docker-compose.yml file the frontend will be conntected to the backend. Important: You have to change the proxy in the package.json file to `"proxy": "http://backend-cont:5000/"`. `backend-cont` is the container name of the backend service.</br>
 Check one last time if it works by running:</br>
-`docker-compose up`</br>
+`$ docker-compose up`</br>
 
 
