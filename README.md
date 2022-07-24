@@ -3,7 +3,6 @@ When I started with the webdevelopment and machine learning stuff I felt overwhe
 - [How to connect Flask and React](https://www.geeksforgeeks.org/how-to-connect-reactjs-with-flask-api/)
 - [Save and Load ML Models with Pickle](https://machinelearningmastery.com/save-load-machine-learning-models-python-scikit-learn/)
 
-Please note I am neither an expert in React nor Flask. But this should give you a good starting point.
 
 </br>
 
